@@ -5,7 +5,7 @@ Commands from the talk
 sh install-docker.sh
 ```
 
-### What does that do?
+### Installer explained
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -26,7 +26,7 @@ https://www.docker.com/docker-windows
 docker pull tiangolo/uwsgi-nginx-flask:flask-upload
 ```
 
-Get the Code
+### Get the Code
 ```
 git clone https://github.com/Archethought/lsw17-api
 git clone https://github.com/peterfinlan/Sedna
@@ -39,9 +39,8 @@ cd lsw17-api
 sh deploy.sh
 ```
 
-### deploy dissected
+### Deploy explained
 ```
-deploy.sh
 #!/bin/bash
 
 dockerName=api
